@@ -1,33 +1,17 @@
 # Signature-Classification-using-CNN
-This project implements and evaluates three models for signature recognition:
 
-	1.	HOG-ANN: Manual feature extraction with Histogram of Oriented Gradients (HOG) and an Artificial Neural Network.
-	2.	SIFT-ANN: Manual feature extraction with Scale-Invariant Feature Transform (SIFT) and an Artificial Neural Network.
-	3.	CNN: A Convolutional Neural Network trained directly on image data.
+A signature recognition project using HOG, SIFT, and CNN approaches to classify signatures, with comprehensive evaluations and visualizations of model performance.
 
-Steps for Metrics Calculation
+## Project Structure
 
-	1.	Load Data: Use ImageDataGenerator for data augmentation and normalization.
-	2.	Feature Extraction:
-	•	HOG: Extracts features using HOG from skimage.
-	•	SIFT: Extracts features using SIFT from OpenCV.
-	3.	Model Training:
-	•	Train ANN models for HOG and SIFT features.
-	•	Train CNN model directly on image data.
-	4.	Evaluation:
-	•	Calculate Precision, Recall, F1-Score, and Accuracy.
-	•	Generate Confusion Matrices, ROC Curves, and Accuracy/Loss plots.
+The project is organized as follows:
 
-Visualizations
-
-	•	Includes Confusion Matrices, ROC Curves, and Accuracy/Error plots to demonstrate model performance.
-
-Dependencies
-
-	•	Python
-	•	TensorFlow
-	•	Keras
-	•	OpenCV
-	•	scikit-learn
-	•	matplotlib
-	•	scikit-image
+- **Data Augmentation and Preprocessing**: Image data generators for training and testing datasets with normalization and slight transformations.
+- **Feature Extraction**:
+  - **HOG (Histogram of Oriented Gradients)**
+  - **SIFT (Scale-Invariant Feature Transform)**
+  - **CNN (Convolutional Neural Network)**
+- **Model Training**:
+  - **HOG-ANN** and **SIFT-ANN** using artificial neural networks.
+  - **CNN** with batch normalization, dropout, and early stopping.
+- **Evaluation**: Model performance metrics such as accuracy, precision, recall, and F1-score.
